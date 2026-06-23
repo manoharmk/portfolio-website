@@ -46,7 +46,10 @@ const Loading = ({ percent }: { percent: number }) => {
     <>
       <div className="loading-header">
         <a href="/#" className="loader-title" data-cursor="disable">
-          Logo
+          <span className="logo-brackets">&lt;</span>
+          <span className="logo-text">MANOHAR.DEV</span>
+          <span className="logo-brackets">/&gt;</span>
+          <span className="logo-cursor">_</span>
         </a>
         <div className={`loaderGame ${clicked && "loader-out"}`}>
           <div className="loaderGame-container">
@@ -96,21 +99,14 @@ export const setProgress = (setLoading: (value: number) => void) => {
   let percent: number = 0;
 
   let interval = setInterval(() => {
-    if (percent <= 50) {
-      let rand = Math.round(Math.random() * 5);
-      percent = percent + rand;
+    if (percent < 100) {
+      let rand = Math.round(Math.random() * 8) + 2;
+      percent = Math.min(100, percent + rand);
       setLoading(percent);
     } else {
       clearInterval(interval);
-      interval = setInterval(() => {
-        percent = percent + Math.round(Math.random());
-        setLoading(percent);
-        if (percent > 91) {
-          clearInterval(interval);
-        }
-      }, 2000);
     }
-  }, 100);
+  }, 40);
 
   function clear() {
     clearInterval(interval);
@@ -120,15 +116,9 @@ export const setProgress = (setLoading: (value: number) => void) => {
   function loaded() {
     return new Promise<number>((resolve) => {
       clearInterval(interval);
-      interval = setInterval(() => {
-        if (percent < 100) {
-          percent++;
-          setLoading(percent);
-        } else {
-          resolve(percent);
-          clearInterval(interval);
-        }
-      }, 2);
+      percent = 100;
+      setLoading(100);
+      resolve(100);
     });
   }
   return { loaded, percent, clear };

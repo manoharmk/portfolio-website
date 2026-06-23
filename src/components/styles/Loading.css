@@ -70,7 +70,7 @@
   overflow: visible;
 }
 .loading-hover {
-  background-color: #a87cff;
+  background-color: #00f2fe;
   width: 250px;
   height: 120px;
   position: absolute;
@@ -194,9 +194,38 @@
   color: var(--backgroundColor);
 }
 .loader-title {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 14px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.loader-title:hover {
+  transform: translateY(-1px);
+}
+.logo-brackets {
+  color: #008fa8;
+  font-weight: 900;
+  transition: color 0.3s ease;
+}
+.loader-title:hover .logo-brackets {
+  color: #00f2fe;
+}
+.logo-text {
+  font-weight: 800;
+  letter-spacing: 0.8px;
+}
+.logo-cursor {
+  color: #008fa8;
+  font-weight: 900;
+  animation: logo-blink 1s step-end infinite;
+}
+@keyframes logo-blink {
+  from, to { opacity: 0; }
+  50% { opacity: 1; }
 }
 @keyframes blink {
   0% {
@@ -272,7 +301,7 @@
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #a87cff;
+  background-color: #00f2fe;
   animation: ball25 7s infinite;
   transform: translateY(10px);
   animation-timing-function: cubic-bezier(0.3, 1.18, 0.63, 1.28);

@@ -37,7 +37,7 @@
   height: 500px;
   margin-left: 200px;
   position: relative;
-  display: none;
+  display: flex;
 }
 .what-content {
   width: 450px;
@@ -53,7 +53,7 @@
 .what-noTouch:hover,
 .what-content-active {
   min-height: 67%;
-  padding: 40px 50px;
+  padding: 25px 50px;
 }
 
 .what-noTouch:hover ~ .what-content,
@@ -72,6 +72,7 @@
   line-height: 18px;
   font-weight: 200;
   letter-spacing: 0.7px;
+  margin: 8px 0;
 }
 .what-content h4 {
   font-weight: 300;
@@ -206,7 +207,11 @@
 }
 .what-content-in {
   height: 100%;
-  overflow: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.what-content-in::-webkit-scrollbar {
+  display: none;
 }
 .what-content-in h5 {
   font-weight: 300;
@@ -214,7 +219,8 @@
   font-size: 12px;
   letter-spacing: 1px;
   font-family: "Geist", sans-serif;
-  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 8px;
 }
 @keyframes whatBorders {
   80% {
