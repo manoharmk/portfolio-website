@@ -10,11 +10,8 @@ const About = () => {
         <div className="about-me">
           <h3 className="title">About Me</h3>
           <p className="para">
-            I am a dedicated Full Stack Java Developer with over 1.5 years of experience
-            designing and implementing enterprise-level banking applications. Having worked
-            at Tata Consultancy Services (TCS) on State Bank of India's Loan Origination System,
-            I specialize in building secure REST APIs, Spring Boot backends, and modular React interfaces,
-            along with database optimization to drive system performance and reliability.
+            I am a dedicated Full Stack Java Developer with 1.7 years of software development experience,
+            including 1.5+ years of enterprise-level banking application development at Tata Consultancy Services (TCS) on State Bank of India's (SBI) Loan Origination System. Having received the SBI Employee of the Month award, I specialize in building secure REST APIs, Spring Boot backends, and modular React interfaces, along with database optimization to drive system performance.
           </p>
         </div>
       </div>

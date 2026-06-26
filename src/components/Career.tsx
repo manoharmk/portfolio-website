@@ -30,10 +30,22 @@ const Career = () => {
                 <h4>Full Stack Developer</h4>
                 <h5>Tata Consultancy Services</h5>
               </div>
-              <h3>2024</h3>
+              <h3>2024 - 2026</h3>
             </div>
             <p>
-              Worked on State Bank of India's Loan Origination System (LOS). Developed 10+ core modules using Java, Spring Boot, Spring MVC, and Oracle PL/SQL. Designed secure REST APIs and implemented JWT-based authentication.
+              Worked on State Bank of India's Loan Origination System (LOS). Developed 6 core modules using Java, Spring Boot, Spring MVC, and Oracle PL/SQL. Designed secure REST APIs, implemented JWT-based authentication, and contributed to 10+ production deployments.
+            </p>
+          </div>
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
+                <h4>Data Science Intern</h4>
+                <h5>Gustovalley Technovations</h5>
+              </div>
+              <h3>2023</h3>
+            </div>
+            <p>
+              Worked on Python, SQL, Excel, and data analysis fundamentals through structured industry training. Performed hands-on coding exercises to strengthen database querying and exploratory data analysis (EDA).
             </p>
           </div>
           <div className="career-info-box">
@@ -42,7 +54,7 @@ const Career = () => {
                 <h4>B.E. in Computer Science</h4>
                 <h5>Basaveshwar Engg. College</h5>
               </div>
-              <h3>2020</h3>
+              <h3>2020 - 2024</h3>
             </div>
             <p>
               Completed Bachelor of Engineering in Computer Science and Engineering at Basaveshwar Engineering College (Bagalkot, Karnataka). Built a strong foundation in Java, database management, and object-oriented systems.

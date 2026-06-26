@@ -67,6 +67,12 @@ const Work = () => {
               category: "Full-Stack E-Commerce Platform",
               tools: "Java, Spring Boot, React, PostgreSQL, JPA/Hibernate, Spring Security, AWS",
               image: "/images/ecommerce.png"
+            },
+            {
+              title: "Personal Developer Portfolio",
+              category: "Front-End Developer Website",
+              tools: "React, TypeScript, Vite, HTML5, CSS3, GSAP, Responsive UI, Vercel",
+              image: "/images/background.jpg"
             }
           ].map((project, index) => (
             <div className="work-box" key={index}>
