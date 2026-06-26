@@ -24,8 +24,12 @@ const Loading = ({ percent }: { percent: number }) => {
       if (isLoaded) {
         setClicked(true);
         setTimeout(() => {
-          if (module.initialFX) {
-            module.initialFX();
+          try {
+            if (module.initialFX) {
+              module.initialFX();
+            }
+          } catch (error) {
+            console.error("Initial FX animations failed:", error);
           }
           setIsLoading(false);
         }, 900);

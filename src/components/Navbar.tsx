@@ -20,14 +20,16 @@ const Navbar = () => {
       ignoreMobileResize: true,
     });
 
-    smoother.scrollTop(0);
-    smoother.paused(true);
+    if (smoother) {
+      smoother.scrollTop(0);
+      smoother.paused(true);
+    }
 
     let links = document.querySelectorAll(".header ul a");
     links.forEach((elem) => {
       let element = elem as HTMLAnchorElement;
       element.addEventListener("click", (e) => {
-        if (window.innerWidth > 1024) {
+        if (window.innerWidth > 1024 && smoother) {
           e.preventDefault();
           let elem = e.currentTarget as HTMLAnchorElement;
           let section = elem.getAttribute("data-href");
@@ -36,7 +38,9 @@ const Navbar = () => {
       });
     });
     window.addEventListener("resize", () => {
-      ScrollSmoother.refresh(true);
+      if (smoother) {
+        ScrollSmoother.refresh(true);
+      }
     });
   }, []);
   return (

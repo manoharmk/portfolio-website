@@ -8,7 +8,8 @@ const WhatIDo = () => {
     containerRef.current[index] = el;
   };
   useEffect(() => {
-    if (ScrollTrigger.isTouch) {
+    const isMobileOrTouch = window.innerWidth <= 1024 || ScrollTrigger.isTouch;
+    if (isMobileOrTouch) {
       containerRef.current.forEach((container) => {
         if (container) {
           container.classList.remove("what-noTouch");
