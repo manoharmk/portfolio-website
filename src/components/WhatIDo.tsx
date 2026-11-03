@@ -103,6 +103,7 @@ const WhatIDo = () => {
                 <div className="what-tags">Maven</div>
                 <div className="what-tags">Git</div>
                 <div className="what-tags">Agile</div>
+                <div className="what-tags">SDLC</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -135,13 +136,13 @@ const WhatIDo = () => {
               <div className="what-content-flex">
                 <div className="what-tags">Java</div>
                 <div className="what-tags">Spring Boot</div>
-                <div className="what-tags">Spring Security</div>
+                <div className="what-tags">Spring MVC</div>
                 <div className="what-tags">Hibernate / JPA</div>
-                <div className="what-tags">Microservices</div>
+                <div className="what-tags">REST APIs</div>
                 <div className="what-tags">Oracle SQL</div>
-                <div className="what-tags">PostgreSQL</div>
-                <div className="what-tags">MySQL</div>
-                <div className="what-tags">JWT / OAuth2</div>
+                <div className="what-tags">PL/SQL</div>
+                <div className="what-tags">Spring Security</div>
+                <div className="what-tags">JWT</div>
               </div>
               <div className="what-arrow"></div>
             </div>

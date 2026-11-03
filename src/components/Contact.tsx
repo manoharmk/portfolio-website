@@ -20,6 +20,8 @@ const Contact = () => {
                 +91 80950 38959
               </a>
             </p>
+            <h4>Location</h4>
+            <p>Thane, Mumbai</p>
           </div>
           <div className="contact-box">
             <h4>Social</h4>

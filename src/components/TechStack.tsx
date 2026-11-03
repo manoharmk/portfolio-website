@@ -1,37 +1,37 @@
 import "./styles/TechStack.css";
-import { FaJava, FaReact, FaJs, FaDatabase, FaLock, FaTerminal } from "react-icons/fa6";
+import { FaJava, FaReact, FaDatabase, FaLock, FaTerminal, FaGear } from "react-icons/fa6";
 
 const TechStack = () => {
   const categories = [
     {
       title: "Languages & Core",
-      icon: <FaJs />,
-      skills: ["Java", "JavaScript", "TypeScript", "C", "C++"],
-    },
-    {
-      title: "Backend & Systems",
-      icon: <FaTerminal />,
-      skills: ["Spring Boot", "Spring MVC", "Hibernate", "JPA", "Node.js"],
-    },
-    {
-      title: "Frontend & UI",
-      icon: <FaReact />,
-      skills: ["React.js", "HTML5", "CSS3", "Responsive UI"],
-    },
-    {
-      title: "Databases & Storage",
-      icon: <FaDatabase />,
-      skills: ["PostgreSQL", "Oracle SQL", "MySQL", "PL/SQL"],
-    },
-    {
-      title: "Security & Auth",
-      icon: <FaLock />,
-      skills: ["Spring Security", "JWT (JSON Web Tokens)", "OAuth 2.0"],
-    },
-    {
-      title: "Developer Tools",
       icon: <FaJava />,
-      skills: ["Postman", "Maven", "Git & GitHub", "Agile Methodologies"],
+      skills: ["Java", "JavaScript", "SQL", "Core Java"],
+    },
+    {
+      title: "Frameworks & Backend",
+      icon: <FaTerminal />,
+      skills: ["Spring Boot", "Spring MVC", "Hibernate", "REST APIs", "CBS Integration"],
+    },
+    {
+      title: "Web Technologies & UI",
+      icon: <FaReact />,
+      skills: ["HTML5", "CSS3", "JavaScript", "UI Components", "Responsive Design"],
+    },
+    {
+      title: "Databases & Tools",
+      icon: <FaDatabase />,
+      skills: ["Oracle SQL", "PL/SQL Developer", "Query Optimization", "PostgreSQL"],
+    },
+    {
+      title: "Security & Architecture",
+      icon: <FaLock />,
+      skills: ["Spring Security", "JWT Authentication", "RESTful Architecture", "SDLC"],
+    },
+    {
+      title: "Tools & Methodologies",
+      icon: <FaGear />,
+      skills: ["Postman", "Maven", "Agile", "Git & GitHub", "Release Validation"],
     },
   ];
 

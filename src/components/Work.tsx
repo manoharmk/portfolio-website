@@ -58,8 +58,8 @@ const Work = () => {
           {[
             {
               title: "Loan Origination System (SBI)",
-              category: "Enterprise Banking / TCS",
-              tools: "Java, Spring Boot, Spring MVC, Oracle PL/SQL, React, JWT, REST APIs",
+              category: "Enterprise Banking / TCS, Mumbai",
+              tools: "Java, Spring Boot, Spring MVC, Oracle PL/SQL, REST APIs, CBS Integration, JWT, HTML/CSS, JavaScript",
               image: "/images/sbi.png"
             },
             {
